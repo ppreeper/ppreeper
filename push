@@ -1,0 +1,5 @@
+#!/bin/sh
+git commit -am "content `date`"
+hugo -d docs
+git commit -am "docs `date`"
+git push
