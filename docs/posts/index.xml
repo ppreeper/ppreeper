@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
+    <title>Posts on Preeper.org</title>
     <link>https://www.preeper.org/posts/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <description>Recent content in Posts on Preeper.org</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 31 Jan 2019 14:00:27 -0700</lastBuildDate>
@@ -17,7 +17,8 @@
       <pubDate>Thu, 31 Jan 2019 14:00:27 -0700</pubDate>
       
       <guid>https://www.preeper.org/posts/my-first-post/</guid>
-      <description>hello</description>
+      <description>This is a post that allow me to test the ability of this system
+. one . two</description>
     </item>
     
   </channel>
