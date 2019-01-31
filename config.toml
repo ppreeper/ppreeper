@@ -1,4 +1,4 @@
 baseURL = "https://www.preeper.org/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Preeper.org"
 theme = "ananke"
