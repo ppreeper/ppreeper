@@ -6,5 +6,5 @@ draft: false
 
 This is a post that allow me to test the ability of this system
 
-. one
-. two
+* one
+* two
