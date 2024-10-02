@@ -2,8 +2,11 @@
 DEB="docs/debs"
 
 gen_release() {
-	dpkg-scanpackages ${DEB}/. /dev/null > ${DEB}/Release
-	dpkg-scanpackages ${DEB}/. /dev/null | gzip -9c > ${DEB}/Packages.gz
+	PD=${PWD}
+	cd ${DEB}
+	dpkg-scanpackages . /dev/null > Release
+	dpkg-scanpackages . /dev/null | gzip -9c > Packages.gz
+	cd ${PD}
 }
 
 gen_index() {
