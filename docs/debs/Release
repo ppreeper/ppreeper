@@ -3,7 +3,7 @@ Version: 0.4.15
 Architecture: amd64
 Maintainer: ppreeper@gmail.com
 Installed-Size: 24160
-Filename: docs/debs/odacli_0.4.15_amd64.deb
+Filename: docs/debs/./odacli_0.4.15_amd64.deb
 Size: 12181878
 MD5sum: 4c824e36f0857ae3578450daa3165896
 SHA1: 4ca63b57f0c9642b9f39e6c0fab46501805ba01e
@@ -20,7 +20,7 @@ Version: 0.4.15
 Architecture: amd64
 Maintainer: ppreeper@gmail.com
 Installed-Size: 17382
-Filename: docs/debs/odaserver_0.4.15_amd64.deb
+Filename: docs/debs/./odaserver_0.4.15_amd64.deb
 Size: 8580228
 MD5sum: fe83059a15b960a8f6db89c6d9167806
 SHA1: 122605215d13e13ef12bd118cb2527a3f9c7a08f

@@ -2,8 +2,12 @@
 DEB="docs/debs"
 
 gen_release() {
-	dpkg-scanpackages ${DEB} /dev/null > docs/debs/Release
-	dpkg-scanpackages ${DEB} /dev/null | grep -9c > docs/debs/Packages
+	dpkg-scanpackages ${DEB}/. /dev/null > ${DEB}/Release
+	dpkg-scanpackages ${DEB}/. /dev/null | gzip -9c > ${DEB}/Packages.gz
+}
+
+gen_index() {
+	ls ${DEB}/ | grep -v index.html | awk '{print "<a href=\""$0"\">"$0"</a></br>"}' > ${DEB}/index.html
 }
 
 get_oda() {
@@ -18,3 +22,4 @@ get_oda() {
 get_oda
 
 gen_release
+gen_index
