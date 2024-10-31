@@ -16,15 +16,15 @@ License: GPL3
 Vendor: none
 
 Package: odaserver
-Version: 0.5.4
+Version: 0.5.5
 Architecture: amd64
 Maintainer: ppreeper@gmail.com
-Installed-Size: 23870
-Filename: ./odaserver_0.5.4_amd64.deb
-Size: 12066754
-MD5sum: 99ece15dddcaa989797556d30d42ef4a
-SHA1: 0b825539b1a77a11cd1b74ad12966a1024ee6673
-SHA256: 85f706e674aa3492561bb198feb68168b8341fa19735c68993a12f03d4ae3bc9
+Installed-Size: 23877
+Filename: ./odaserver_0.5.5_amd64.deb
+Size: 12071818
+MD5sum: 6f3a8d47985824b6ec45b0faa4e8b0d7
+SHA1: d33a27d88fef11ea56296a5b1fc5b0c37c33c4ff
+SHA256: 62eba9fb54e5afd364ab91c6dd1f230dadbb2c22cb736914aec5c9cf315c5c55
 Section: default
 Priority: optional
 Homepage: https://github.com/ppreeper/odas
