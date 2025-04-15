@@ -24,8 +24,8 @@ all: genrelease genindex
 
 .PHONY: hugo
 hugo:
-	git commit -am "content `date`"
 	hugo -d docs
+	git add docs
 	git commit -am "docs `date`"
 
 .PHONY: pushrepo
