@@ -19,8 +19,8 @@ getoda:
 	rm -f docs/debs/oda*deb
 	cp ${HOME}/workspace/repos/ppreeper/odaspro/bin/*deb docs/debs/.
 
-.PHONY: hugo
-hugo:
+.PHONY: genhugo
+genhugo:
 	hugo -d docs
 	git add docs
 	git commit -am "docs `date`"
@@ -32,4 +32,4 @@ pushrepo:
 	git push
 
 .PHONY: all
-all: getoda genrelease genindex hugo pushrepo
+all: getoda genrelease genindex genhugo pushrepo
