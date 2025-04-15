@@ -1,0 +1,34 @@
+Package: odacli
+Version: 20250415-2343fcd
+Architecture: amd64
+Maintainer: ppreeper@gmail.com
+Installed-Size: 27362
+Filename: ./docs/debs/odacli_20250415-2343fcd_amd64.deb
+Size: 13799796
+MD5sum: 840abb6330cea94ea06f359cecd280b1
+SHA1: bc14f3d3f16d0d28ed7699f96e10f5efce81de0b
+SHA256: 488243a179be1c054b378049c66efa954412d46d84a6561b03b1f79f717a0bbf
+Section: default
+Priority: optional
+Homepage: http://example.com/no-uri-given
+Description: ODA Client Application
+License: GPL3
+Vendor: none
+
+Package: odaserver
+Version: 20250415-2343fcd
+Architecture: amd64
+Maintainer: ppreeper@gmail.com
+Installed-Size: 29601
+Filename: ./docs/debs/odaserver_20250415-2343fcd_amd64.deb
+Size: 15004536
+MD5sum: aed7433c9413688cf53c085bed4c8025
+SHA1: a695aadc6090731f924c21aee2f0ab9b487c4e3c
+SHA256: 6205e8c49806591eace509e336748e55673ab712c2f92243fb0dd438e9f26f83
+Section: default
+Priority: optional
+Homepage: http://example.com/no-uri-given
+Description: ODA Server Application
+License: GPL3
+Vendor: none
+
