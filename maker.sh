@@ -30,7 +30,7 @@ pushrepo() {
 
 # Display usage instructions
 usage() {
-    echo "Usage: $0 {getoda|genrelease|genindex|genhugo|pushrepo|all}"
+    echo "Usage: $0 {getoda|genrelease|genindex|genhugo|makerepo|pushrepo|build|all}"
     exit 1
 }
 
