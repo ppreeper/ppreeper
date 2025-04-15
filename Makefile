@@ -17,10 +17,7 @@ genindex:
 .PHONY: getoda
 getoda:
 	rm -f docs/debs/oda*deb
-	cp $HOME/workspace/repos/ppreeper/odaspro/bin/*deb docs/debs/.
-
-.PHONY: all
-all: genrelease genindex
+	cp ${HOME}/workspace/repos/ppreeper/odaspro/bin/*deb docs/debs/.
 
 .PHONY: hugo
 hugo:
@@ -34,3 +31,5 @@ pushrepo:
 	git commit -am "repo `date`"
 	git push
 
+.PHONY: all
+all: getoda genrelease genindex hugo pushrepo
