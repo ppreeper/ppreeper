@@ -14,17 +14,23 @@ genindex() {
 }
 
 getoda() {
-    rm -f docs/debs/oda*deb
-    cp "${HOME}"/workspace/repos/ppreeper/odaspro/bin/*deb docs/debs/.
+    rm -fv docs/debs/oda*deb
+    cp -v "${HOME}"/workspace/repos/ppreeper/odaspro/bin/*deb docs/debs/.
 }
 
 genhugo() {
     hugo -d docs
 }
 
+pushrepo() {
+    git add .
+    git commit -am "repo $(date)"
+    git push
+}
+
 # Display usage instructions
 usage() {
-    echo "Usage: $0 {one|two|three}"
+    echo "Usage: $0 {getoda|genrelease|genindex|genhugo|pushrepo|all}"
     exit 1
 }
 
@@ -38,11 +44,35 @@ case "$1" in
 getoda)
     getoda
     ;;
-two)
-    function_two
+genrelease)
+    genrelease
     ;;
-three)
-    function_three
+genindex)
+    genindex
+    ;;
+genhugo)
+    genhugo
+    ;;
+makerepo)
+    getoda
+    genrelease
+    genindex
+    ;;
+pushrepo)
+    pushrepo
+    ;;
+build)
+    getoda
+    genrelease
+    genindex
+    genhugo
+    ;;
+all)
+    getoda
+    genrelease
+    genindex
+    genhugo
+    pushrepo
     ;;
 *)
     usage
