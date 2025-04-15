@@ -27,8 +27,8 @@ get_odas() {
 	wget -qO ${DEB}/odaserver_${vers}_amd64.deb "${REPO}/releases/download/v${vers}/odaserver_${vers}_amd64.deb"
 }
 
-get_oda
-get_odas
+#get_oda
+#get_odas
 
 gen_release
 gen_index

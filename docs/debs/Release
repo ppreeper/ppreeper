@@ -1,34 +1,34 @@
 Package: odacli
-Version: 0.6.2
+Version: 20250414-43b8d40
 Architecture: amd64
 Maintainer: ppreeper@gmail.com
-Installed-Size: 26179
-Filename: ./odacli_0.6.2_amd64.deb
-Size: 13339896
-MD5sum: 3b329e4895f69c366a0c4511be1ec3d1
-SHA1: 959d94e2dace0170ba307512b7e252a59ef27289
-SHA256: 647a1df5ef86adea7438d3e878aec1cfc71f0fcd97ca2147725452c7e974815e
+Installed-Size: 26650
+Filename: ./odacli_20250414-43b8d40_amd64.deb
+Size: 13498982
+MD5sum: 2a5dc3e3a0f05fa58f6b79289c5b792c
+SHA1: 6db475a76e0dbc8ab240ebe1f643d94d82d88032
+SHA256: 5368ec221619b1d73b989e1c0b60e486d80ec5724a97450548ece41001fe72db
 Section: default
 Priority: optional
-Homepage: https://github.com/ppreeper/oda
+Homepage: http://example.com/no-uri-given
 Description: ODA Client Application
 License: GPL3
 Vendor: none
 
 Package: odaserver
-Version: 0.5.5
+Version: 20250414-43b8d40
 Architecture: amd64
 Maintainer: ppreeper@gmail.com
-Installed-Size: 23877
-Filename: ./odaserver_0.5.5_amd64.deb
-Size: 12071818
-MD5sum: 6f3a8d47985824b6ec45b0faa4e8b0d7
-SHA1: d33a27d88fef11ea56296a5b1fc5b0c37c33c4ff
-SHA256: 62eba9fb54e5afd364ab91c6dd1f230dadbb2c22cb736914aec5c9cf315c5c55
+Installed-Size: 28497
+Filename: ./odaserver_20250414-43b8d40_amd64.deb
+Size: 14499594
+MD5sum: d9e5f7a277f345d019b0bbeb2f47a34d
+SHA1: a8948ace7c1592cf6368fcc8d3ec6b19513f40fe
+SHA256: b68d24f75d371da85e6f158f01285194042a4e4f5c0d9b20c2ca2d51c4c99a6e
 Section: default
 Priority: optional
-Homepage: https://github.com/ppreeper/odas
-Description: ODA Server Side Application
+Homepage: http://example.com/no-uri-given
+Description: ODA Server Application
 License: GPL3
 Vendor: none
 
