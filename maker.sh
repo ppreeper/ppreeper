@@ -12,14 +12,10 @@ Component: main
 Architecture: amd64
 EOF
 }
-
-# genindex() {
-#     ls "${DEB}"/ | grep -v index.html | awk '{print "<a href=\""$0"\">"$0"</a></br>"}' >${DEB}/index.html
-# }
-
+:workspace
 getoda() {
-    rm -fv docs/debian/pool/main/o/oda*deb
-    cp -v "${HOME}"/workspace/repos/ppreeper/odaspro/bin/*deb docs/debian/pool/main/o/.
+    rm -fv ${DEB}/pool/main/o/oda*deb
+    cp -v "${HOME}"/workspace/repos/ppreeper/odaspro/bin/*deb ${DEB}/pool/main/o/.
 }
 
 genhugo() {
