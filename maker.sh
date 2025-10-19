@@ -5,7 +5,7 @@ genrelease() {
     PD=${PWD}
     cd "${DEB}" || return
     dpkg-scanpackages --arch amd64 pool/main >dists/stable/main/binary-amd64/Packages
-    gzip -k dists/stable/main/binary-amd64/Packages
+    gzip -fk dists/stable/main/binary-amd64/Packages
     cd "${PD}" || return
     cat >dists/stable/main/binary-amd64/Release <<EOF
 Component: main
