@@ -3,7 +3,7 @@ Version: 20251017-5951753
 Architecture: amd64
 Maintainer: ppreeper@gmail.com
 Installed-Size: 26334
-Filename: ./odacli_20251017-5951753_amd64.deb
+Filename: pool/main/o/odacli_20251017-5951753_amd64.deb
 Size: 12959166
 MD5sum: ce74ec37b372cb0070374bb3c5a2668d
 SHA1: 38b9fc826f17f78ba75ace9dd97f4413e15bf15d
@@ -20,7 +20,7 @@ Version: 20251017-5951753
 Architecture: amd64
 Maintainer: ppreeper@gmail.com
 Installed-Size: 30106
-Filename: ./odaserver_20251017-5951753_amd64.deb
+Filename: pool/main/o/odaserver_20251017-5951753_amd64.deb
 Size: 14988578
 MD5sum: 0177ac7a4688fccfce93b4c2ceddfc85
 SHA1: a0760eda6a40daa4b6c5212ef2e0b69be7a23de5

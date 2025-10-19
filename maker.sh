@@ -1,21 +1,25 @@
 #!/bin/sh
-DEB=docs/debs
+DEB=docs/debian
 
 genrelease() {
     PD=${PWD}
     cd "${DEB}" || return
-    dpkg-scanpackages . /dev/null >Release
-    dpkg-scanpackages . /dev/null | gzip -9c >Packages.gz
+    dpkg-scanpackages --arch amd64 pool/main >dists/stable/main/binary-amd64/Packages
+    gzip -k dists/stable/main/binary-amd64/Packages
     cd "${PD}" || return
+    cat >dists/stable/main/binary-amd64/Release <<EOF
+Component: main
+Architecture: amd64
+EOF
 }
 
-genindex() {
-    ls "${DEB}"/ | grep -v index.html | awk '{print "<a href=\""$0"\">"$0"</a></br>"}' >${DEB}/index.html
-}
+# genindex() {
+#     ls "${DEB}"/ | grep -v index.html | awk '{print "<a href=\""$0"\">"$0"</a></br>"}' >${DEB}/index.html
+# }
 
 getoda() {
-    rm -fv docs/debs/oda*deb
-    cp -v "${HOME}"/workspace/repos/ppreeper/odaspro/bin/*deb docs/debs/.
+    rm -fv docs/debian/pool/main/o/oda*deb
+    cp -v "${HOME}"/workspace/repos/ppreeper/odaspro/bin/*deb docs/debian/pool/main/o/.
 }
 
 genhugo() {
@@ -70,7 +74,7 @@ build)
 all)
     getoda
     genrelease
-    genindex
+    # genindex
     genhugo
     pushrepo
     ;;
