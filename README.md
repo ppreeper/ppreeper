@@ -29,5 +29,5 @@ Hi 👋 My name is Peter Preeper
 ### Repositories
 
 ```bash
-echo "deb [trusted=yes] https://www.preeper.org/debian stable main" | sudo tee /etc/apt/sources.list.d/preeper.list
+echo "deb [arch=amd64 trusted=yes] https://www.preeper.org/debian stable main" | sudo tee /etc/apt/sources.list.d/preeper.list
 ```
