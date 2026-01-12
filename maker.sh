@@ -15,7 +15,7 @@ EOF
 :workspace
 getoda() {
     rm -fv ${DEB}/pool/main/o/oda*deb
-    cp -v "${HOME}"/../odaspro/bin/*deb ${DEB}/pool/main/o/.
+    cp -v "../odaspro/bin/*deb" "${DEB}/pool/main/o/."
 }
 
 genhugo() {
