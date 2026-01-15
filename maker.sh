@@ -7,11 +7,11 @@ genrelease() {
     mkdir -p "dists/stable/main/binary-amd64"
     dpkg-scanpackages --arch amd64 pool/main >dists/stable/main/binary-amd64/Packages
     gzip -fk dists/stable/main/binary-amd64/Packages
-    cd "${PD}" || return
-    cat >docs/debian/dists/stable/main/binary-amd64/Release <<EOF
+    cat >dists/stable/main/binary-amd64/Release <<EOF
 Component: main
 Architecture: amd64
 EOF
+    cd "${PD}" || return
 }
 # :workspace
 getoda() {
