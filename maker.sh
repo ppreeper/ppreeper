@@ -13,7 +13,7 @@ Architecture: amd64
 EOF
     cd "${PD}" || return
 }
-# :workspace
+
 getoda() {
     rm -fv "${DEB}"/pool/main/o/oda*deb
     mkdir -p "${DEB}"/pool/main/o
