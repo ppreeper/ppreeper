@@ -4,15 +4,16 @@ DEB=docs/debian
 genrelease() {
     PD=${PWD}
     cd "${DEB}" || return
-    dpkg-scanpackages --arch amd64 pool/main > dists/stable/main/binary-amd64/Packages
+    mkdir -p "dists/stable/main/binary-amd64"
+    dpkg-scanpackages --arch amd64 pool/main >dists/stable/main/binary-amd64/Packages
     gzip -fk dists/stable/main/binary-amd64/Packages
     cd "${PD}" || return
-    cat >dists/stable/main/binary-amd64/Release <<EOF
+    cat >docs/debian/dists/stable/main/binary-amd64/Release <<EOF
 Component: main
 Architecture: amd64
 EOF
 }
-:workspace
+# :workspace
 getoda() {
     rm -fv "${DEB}"/pool/main/o/oda*deb
     mkdir -p "${DEB}"/pool/main/o
