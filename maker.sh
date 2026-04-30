@@ -17,7 +17,7 @@ EOF
 getoda() {
     rm -fv "${DEB}"/pool/main/o/oda*deb
     mkdir -p "${DEB}"/pool/main/o
-    cp -v "${HOME}"/repos/ppreeper/odaspro/bin/*deb "${DEB}"/pool/main/o/.
+    cp -v "${HOME}"/workspace/repos/ppreeper/odaspro/bin/*deb "${DEB}"/pool/main/o/.
 }
 
 genhugo() {
