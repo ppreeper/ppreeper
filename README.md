@@ -25,9 +25,3 @@ Hi 👋 My name is Peter Preeper
 
 <a href="https://github.com/ppreeper" align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ppreeper&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20%Languages" alt="Top Languages" /></a>
 
-
-### Repositories
-
-```bash
-echo "deb [arch=amd64 trusted=yes] https://www.preeper.org/debian stable main" | sudo tee /etc/apt/sources.list.d/preeper.list
-```
